@@ -1,0 +1,13 @@
+#copiar-video-btn {
+    position: fixed;
+    background-color: #fff;
+    top: 90px;
+    right: 30px;
+    border-radius: 50px;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+#copiar-video-btn:hover {
+    background-color: #afafaf;
+}

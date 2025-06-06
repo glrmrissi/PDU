@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Copiar Vídeo do TikTok",
+  "version": "1.0",
+  "description": "Adiciona um botão para copiar o link direto do vídeo que está sendo reproduzido no TikTok.",
+  "icons": {
+    "48": "icons/arrow.svg"
+  },
+  "permissions": [
+    "activeTab",
+    "clipboardWrite"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://www.tiktok.com/*"],
+      "js": ["main.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    "icons/arrow.svg"
+  ]
+}
